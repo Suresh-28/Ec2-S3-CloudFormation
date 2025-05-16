@@ -1,0 +1,12 @@
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation template to create an S3 bucket
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0f88e80871fd81e91  # Replace with a valid AMI ID for your region
+      InstanceType: t2.micro          
